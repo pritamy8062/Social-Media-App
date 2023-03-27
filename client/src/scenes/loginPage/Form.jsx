@@ -71,7 +71,7 @@ const Form = () => {
         formData.append("picturePath", values.picture.name);
 
         const savedUserResponse = await fetch(
-            "http://localhost:3001/auth/register",
+            "https://sociopedia-backend-zdsw.onrender.com/auth/register",
             {
                 method: "POST",
                 body: formData,
